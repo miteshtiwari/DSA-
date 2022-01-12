@@ -1,0 +1,21 @@
+import java.util.Arrays;
+
+public class arrays
+{
+    public static void main(String[] args)
+    {
+        int count = 0;
+        int sum = 0;
+        int [] arr1 = {1,3,5,3,34,342,43,89};
+        for(int i = 0;i< arr1.length;i++)
+        {
+            count++;
+            sum+=arr1[i];
+        }
+        int average ;
+        average = sum/count;
+        System.out.println("the average is :"+ average);
+
+
+    }
+}
