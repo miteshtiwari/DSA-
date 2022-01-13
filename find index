@@ -1,0 +1,25 @@
+public class arrays
+{
+    public static int findindex(int[] arr,int t)
+    {
+        if(arr==null) return -1;
+        int len = arr.length;
+        int i = 0;
+        while (i<len)
+        {
+            if(arr[i]==t)
+            {
+                return i;
+            }
+            i++;
+        }
+        return -1;
+
+    }
+
+    public static void main(String[] args)
+    {
+        int [] ap = {1,2,4,5,8,7,8,9};
+        System.out.println(findindex(ap,99));
+    }
+}
