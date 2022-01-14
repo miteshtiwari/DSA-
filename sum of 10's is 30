@@ -1,0 +1,25 @@
+import java.util.Arrays;
+
+public class rough {
+    public static void main(String[] args) {
+
+
+        int[] arr = {5, 7, 2, 4, 9,-1,10,10,10,10};
+        int count = 0;
+       for(int i = 0;i<arr.length;i++)
+       {
+           if(arr[i] == 10)
+           {
+               count++;
+           }
+       }
+       if(count==3)
+       {
+           System.out.println("sum is 10");
+       }
+       else
+       {
+           System.out.println("no sum");
+       }
+    }
+}
