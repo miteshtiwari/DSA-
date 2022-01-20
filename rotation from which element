@@ -1,0 +1,32 @@
+public class rough
+{
+    public static void main(String[] args)
+    {
+        int [] arra = {35,32,30,14,18,21,27};
+        int lo = 0;
+        int hi = arra.length-1;
+        while (lo<=hi)
+        {
+            int mid = (lo+hi)/2;
+            if(arra[mid]>arra[mid+1])
+            {
+                System.out.println(arra[mid+1]);
+                break;
+            }
+            else if(arra[mid]<arra[mid-1])
+            {
+                System.out.println(arra[mid]);
+                break;
+            }
+            else if(arra[lo]<=arra[mid])
+            {
+                lo = mid+1;
+            }
+            else if(arra[lo]>=arra[hi])
+            {
+                hi = mid-1;
+            }
+        }
+    }
+
+}
